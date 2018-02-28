@@ -1,0 +1,142 @@
+<ion-header class="index-search">
+  <ion-grid>
+    <ion-row>
+      <ion-col col-10>
+        <ion-searchbar placeholder="信用借款，蚂蚁借呗" (ionInput)="search($event)"></ion-searchbar>
+      </ion-col>
+      <ion-col col-1>
+        <ion-icon name="person"></ion-icon>
+      </ion-col>
+      <ion-col col-1>
+        <ion-icon name="add"></ion-icon>
+      </ion-col>
+    </ion-row>
+    <ion-row class="quick">
+      <ion-col col-3>
+        <ion-icon name="qr-scanner"></ion-icon>
+        <div style="padding-left: 25px">
+          扫一扫
+        </div>
+      </ion-col>
+      <ion-col col-3>
+        <ion-icon name="list"></ion-icon>
+        <div style="padding-left: 30px">
+          付钱
+        </div>
+      </ion-col>
+      <ion-col col-3>
+        <ion-icon name="logo-hackernews"></ion-icon>
+        <div style="padding-left: 30px">
+          收钱
+        </div>
+      </ion-col>
+      <ion-col col-3>
+        <ion-icon name="paper"></ion-icon>
+        <div style="padding-left: 30px">
+          卡包
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+
+<ion-content  class="index-content">
+  <ion-grid class="grid-nine">
+    <ion-row >
+      <ion-col col-3>
+        <ion-icon name="qr-scanner"></ion-icon>
+        <div style="padding-left: 27px">
+          转账
+        </div>
+      </ion-col>
+      <ion-col col-3>
+        <ion-icon name="list"></ion-icon>
+        <div style="padding-left: 5px">
+          信用卡还款
+        </div>
+      </ion-col>
+      <ion-col col-3>
+        <ion-icon name="logo-hackernews"></ion-icon>
+        <div style="padding-left: 14px">
+          充值中心
+        </div>
+      </ion-col>
+      <ion-col col-3>
+        <ion-icon name="paper"></ion-icon>
+        <div style="padding-left: 27px">
+          股票
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row >
+      <ion-col col-3>
+        <ion-icon name="qr-scanner"></ion-icon>
+        <div style="padding-left: 27px">
+          转账
+        </div>
+      </ion-col>
+      <ion-col col-3>
+        <ion-icon name="list"></ion-icon>
+        <div style="padding-left: 5px">
+          信用卡还款
+        </div>
+      </ion-col>
+      <ion-col col-3>
+        <ion-icon name="logo-hackernews"></ion-icon>
+        <div style="padding-left: 14px">
+          充值中心
+        </div>
+      </ion-col>
+      <ion-col col-3>
+        <ion-icon name="paper"></ion-icon>
+        <div style="padding-left: 27px">
+          股票
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row >
+      <ion-col col-3>
+        <ion-icon name="qr-scanner"></ion-icon>
+        <div style="padding-left: 27px">
+          转账
+        </div>
+      </ion-col>
+      <ion-col col-3>
+        <ion-icon name="list"></ion-icon>
+        <div style="padding-left: 5px">
+          信用卡还款
+        </div>
+      </ion-col>
+      <ion-col col-3>
+        <ion-icon name="more"></ion-icon>
+        <div style="padding-left: 26px">
+          更多
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <hr>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar item-start>
+          <ion-icon style="font-size: 30px" name="person"></ion-icon>
+        </ion-avatar>
+        <h4>您有一份医保补充计划待开启
+        <ion-icon style="float: right" name="arrow-forward"></ion-icon>
+        </h4>
+      </ion-item>
+    </ion-item-sliding>
+  <ion-slides pager [autoplay]="true" style="height: 70px">
+
+    <ion-slide style="background-color: #2ec95c;height: 70px">
+      <h2>图一</h2>
+    </ion-slide>
+    <ion-slide style="background-color: #4d4d4d;height: 70px">
+      <h2>图二</h2>
+    </ion-slide>
+    <ion-slide style="background-color: #007aff;height: 70px">
+      <h2>图三</h2>
+    </ion-slide>
+
+  </ion-slides>
+</ion-content>
