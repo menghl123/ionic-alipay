@@ -8,7 +8,7 @@
         <ion-icon name="person"></ion-icon>
       </ion-col>
       <ion-col col-1>
-        <ion-icon name="add"></ion-icon>
+        <ion-icon name="add" (click)="presentPopover()"></ion-icon>
       </ion-col>
     </ion-row>
     <ion-row class="quick">
@@ -40,9 +40,9 @@
   </ion-grid>
 </ion-header>
 
-<ion-content  class="index-content">
+<ion-content class="index-content">
   <ion-grid class="grid-nine">
-    <ion-row >
+    <ion-row>
       <ion-col col-3>
         <ion-icon name="qr-scanner"></ion-icon>
         <div style="padding-left: 27px">
@@ -68,7 +68,7 @@
         </div>
       </ion-col>
     </ion-row>
-    <ion-row >
+    <ion-row>
       <ion-col col-3>
         <ion-icon name="qr-scanner"></ion-icon>
         <div style="padding-left: 27px">
@@ -94,7 +94,7 @@
         </div>
       </ion-col>
     </ion-row>
-    <ion-row >
+    <ion-row>
       <ion-col col-3>
         <ion-icon name="qr-scanner"></ion-icon>
         <div style="padding-left: 27px">
@@ -116,16 +116,16 @@
     </ion-row>
   </ion-grid>
   <hr>
-    <ion-item-sliding>
-      <ion-item>
-        <ion-avatar item-start>
-          <ion-icon style="font-size: 30px" name="person"></ion-icon>
-        </ion-avatar>
-        <h4>您有一份医保补充计划待开启
+  <ion-item-sliding>
+    <ion-item>
+      <ion-avatar item-start>
+        <ion-icon style="font-size: 30px" name="person"></ion-icon>
+      </ion-avatar>
+      <h4>您有一份医保补充计划待开启
         <ion-icon style="float: right" name="arrow-forward"></ion-icon>
-        </h4>
-      </ion-item>
-    </ion-item-sliding>
+      </h4>
+    </ion-item>
+  </ion-item-sliding>
   <ion-slides pager [autoplay]="true" style="height: 70px">
 
     <ion-slide style="background-color: #2ec95c;height: 70px">
@@ -137,6 +137,56 @@
     <ion-slide style="background-color: #007aff;height: 70px">
       <h2>图三</h2>
     </ion-slide>
-
   </ion-slides>
+  <ion-grid class="grid-nine">
+    <ion-row>
+      <ion-col col-12>
+        <span style="display: inline-block;width: 3px;height: 14px;background: #007aff;margin-right: 8px">
+        </span>惠支付
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-4>
+        真没有想到<br>
+        <small style="font-size: 10px">你还有这一笔钱</small>
+      </ion-col>
+      <ion-col col-2>
+        <span style="border-radius: 50%;display: inline-block;width: 30px;height: 30px;background: #007aff">
+        </span>
+      </ion-col>
+      <ion-col col-4>
+        真没有想到 <br>
+        <small style="font-size: 10px">你还有这一笔钱</small>
+      </ion-col>
+      <ion-col col-2>
+        <span style="border-radius: 50%;display: inline-block;width: 30px;height: 30px;background: #007aff">
+        </span>
+      </ion-col>
+    </ion-row>
+    <br>
+    <ion-row>
+      <ion-col col-12>
+        <span style="display: inline-block;width: 3px;height: 14px;background: #007aff;margin-right: 8px">
+        </span>生活服务
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-4>
+        真没有想到<br>
+        <small style="font-size: 10px">你还有这一笔钱</small>
+      </ion-col>
+      <ion-col col-2>
+        <span style="border-radius: 50%;display: inline-block;width: 30px;height: 30px;background: #007aff">
+        </span>
+      </ion-col>
+      <ion-col col-4>
+        真没有想到 <br>
+        <small style="font-size: 10px">你还有这一笔钱</small>
+      </ion-col>
+      <ion-col col-2>
+        <span style="border-radius: 50%;display: inline-block;width: 30px;height: 30px;background: #007aff">
+        </span>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

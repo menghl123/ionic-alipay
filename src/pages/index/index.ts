@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import {NavController, PopoverController} from 'ionic-angular';
+import {MoreactionComponent} from '../../components/moreaction/moreaction';
 
 @Component({
   selector: 'ali-index',
@@ -7,12 +8,18 @@ import { NavController } from 'ionic-angular';
 })
 export class IndexPage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController,
+              public popoverCtrl: PopoverController) {
 
   }
 
   search($event){
     console.log($event);
+  }
+
+  presentPopover() {
+    let popover = this.popoverCtrl.create(MoreactionComponent);
+    popover.present();
   }
 
 }
