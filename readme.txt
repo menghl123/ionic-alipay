@@ -19,3 +19,9 @@ chrome://inspect/#devices
 https://my.oschina.net/u/2949632/blog/1186414
 
 http://blog.csdn.net/liufang1991/article/details/77529736
+
+https://gitee.com/crossinfo/ionic3-base
+
+https://www.cnblogs.com/cyan747/p/7429284.html
+
+https://github.com/ParryQiu/GuGuJianKong
